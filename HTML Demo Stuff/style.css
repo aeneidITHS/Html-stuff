@@ -1,0 +1,40 @@
+h1{color: blue;}
+div{
+    width: 160px;
+    height: 300px;
+    padding: 40px;
+    border: 8px solid red;
+    background: yellow;
+    
+}
+@keyframes stuff {
+    from {background-color:yellow ;}
+    to {background-color: black;}
+}
+
+.content-box{
+    box-sizing: content-box;
+    transition-timing-function: linear;
+    transition-duration: 5s;
+
+}
+
+.content-box:hover{
+    width: 400px;
+}
+.border-box:hover{
+    animation-name: stuff;
+    animation-duration: 4s; 
+}
+.border-box{
+    box-sizing: border-box;
+    
+}
+
+p.first-p::first-letter{
+    float: inline-end;
+    color: rgb(7, 13, 18);
+}
+p::first-line{
+    color: aqua;
+}
